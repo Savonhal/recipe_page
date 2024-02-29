@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <title>Recipe Catalog</title>
+        <link rel="stylesheet" href="css files/recipe_catalog.css">
+        <link rel="stylesheet" href="css files/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <h2 class="logo"><a href="../index.html">food.</a></h2>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="recipe_catalog.html">Recipe Catalog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="catalog-banner">
+            
+            <h2>Recipe</h2>
+            <p>These recipes have been organized via their meal type and cooking time</p>
+            <h3>Meals Types</h3>
+                <!--
+                    appetizer , breakfast , lunch , dinner
+                -->
+                <input type="checkbox" id="appetizerFilter" class="filter-option" data-filter="appetizer">
+                <label for="appetizerFilter">Appetizer</label>
+                <input type="checkbox" id="breakfastFilter" class="filter-option" data-filter="breakfast">
+                <label for="breakfastFilter">Breakfast</label>
+                <input type="checkbox" id="lunchFilter" class="filter-option" data-filter="lunch">
+                <label for="lunchFilter">Lunch</label>
+                <input type="checkbox" id="dinnerFilter" class="filter-option" data-filter="dinner">
+                <label for="diinnerFilter">Dinner</label>
+            <h3>Cooking Time</h3>
+                <!--
+                    10m-30m , 30m-1h , 1h-1h30m , 1h30m+
+                -->
+                <input type="checkbox" id="10-30Filter" class="filter-option" data-filter="10m-30m">
+                <label for="10-30Filter">10-30 minutes</label>
+                <input type="checkbox" id="30-1Filter" class="filter-option" data-filter="30m-1h">
+                <label for="30-1filter">30 minutes - 1 hour</label>
+                <input type="checkbox" id="1-1/2Filter" class="filter-option" data-filter="1h-1h30m">
+                <label for="1-1/2Filter">1 hour - 1 hour 30 minutes</label>
+                <input type="checkbox" id="1 1/2+Filter" class="filter-option" data-filter="1h30m+">
+                <label for="1 1/2+Filter">1 hour and 30 minutes +</label>
+        
+            <br>
+            <div id="recipe-catalog">
+                <!--
+                -Follow instructions in recipe_card_template.txt if you want to add a new recipe card
+                List of all Available Classes:
+                    -Meal of the Days: appetizer , breakfast , lunch , dinner
+                    -Cooking Time: 10m-30m , 30m-1h , 1h-1h30m , 1h30m+
+                -->
+                <div class="card-cont breakfast 10m-30m">
+                    <a class="breakfast 10m-30m" href="recipe_pages/eggs_bacon.html">
+                        <div class="card breakfast 10m-30m">
+                            <div class="card_front breakfast 10m-30m">
+                                <img src="food_images/eggs_bacon.jpg" alt="pic of eggs and bacon">
+                                <h4>Eggs and Bacon  <p>Breakfast</p> <p>10 - 30 minutes</p></h4>
+                            </div>
+                            <div class="card_back breakfast 10m-30m">
+                                <p style="text-align: right;"> %Daily Value</p>
+                                <p>Calories: 186</p>
+                                <p>Protein: 15.8g<p>
+                                <p>Carbs: 0.9g<p>
+                                <p>Cholestorol: 294.8mg<p>
+                                <p>Sodium: 282.4mg (12%)<p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-cont lunch 30m-1h">
+                    <a class="lunch 30m-1h" href="recipe_pages/roasted_mushroom_sandwhich.html">
+                        <div class="card lunch 30m-1h">
+                            <div class="card_front lunch 30m-1h">
+                                <img src="food_images/Mushroom-Sandwich_1.jpg" alt="pic of sandwhich">
+                                <h4>Roasted Mushroom Sandwich with Horseradish Aioli <p>Lunch</p> <p>30 minutes - 1 hour</p></h4>
+                            </div>
+                            <div class="card_back lunch 30m-1h">
+                                <p style="text-align: right;"> %Daily Value</p>
+                                <p>Calories: 439 </p>
+                                <p>Protein: 9g (18%)<p>
+                                <p>Carbs: 10.6g (4%)<p>
+                                <p>Cholestorol: 24.7mg (8%)<p>
+                                <p>Sodium: 809.9mg (35%)<p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-cont dinner lunch 1h30m+">
+                    <a class="dinner 1h30m+" href="recipe_pages/crockpot_chicken_gnocchi_soup.html">
+                        <div class="card dinner lunch 1h30m+">
+                            <div class="card_front dinner lunch 1h30m+">
+                                <img src="food_images/Crockpot-Chicken-Gnocchi-Soup_1.jpg" alt="pic of soup">
+                                <h4>Crockpot Chicken Gnocchi Soup<p>Lunch, Dinner</p> <p>1 hour +</p></h4>
+                            </div>
+                            <div class="card_back dinner lunch 1h30m+">
+                                <p style="text-align: right;"> %Daily Value</p>
+                                <p>Calories: 282</p>
+                                <p>Protein: 19.4g (39%)<p>
+                                <p>Carbs: 38.4g (14%)<p>
+                                <p>Cholestorol: 39mg (13%)<p>
+                                <p>Sodium: 955.1mg (42%)<p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-cont dinner lunch 10m-30m">
+                    <a class="dinner 10m-30m" href="recipe_pages/recipe.html">
+                        <div class="card dinner lunch 10m-30m">
+                            <div class="card_front dinner lunch 10m-30m">
+                                <img src="food_images/image2.jpg" alt="pic of pasta">
+                                <h4>Creamy Garlic Sun-Dried Tomato Pasta <p>Lunch, Dinner</p> <p>10 - 30 minutes</p></h4>
+                            </div>
+                            <div class="card_back dinner lunch 10m-30m">
+                                <p style="text-align: right;"> %Daily Value</p>
+                                <p>Calories: 450</p>
+                                <p>Protein: 40.5g (81%)<p>
+                                <p>Carbs: 42g (15%)<p>
+                                <p>Cholestorol: 86.3mg (29%)<p>
+                                <p>Sodium: 2016.4mg (88%)<p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-cont breakfast 30m-1h">
+                    <a class="breakfast 30m-1h" href="recipe_pages/biscuits_gravy_egg_bake.html">
+                        <div class="card breakfast 30m-1h">
+                            <div class="card_front breakfast 30m-1h">
+                                <img src="food_images/Biscuits-and-Gravy-Egg-Bake_3.jpg" alt="pic of eggs and bacon">
+                                <h4>Biscuits and Gravy Egg Bake <p>Breakfast</p> <p>30 minutes - 1 hour</p></h4>
+                            </div>
+                            <div class="card_back breakfast 30m-1h">
+                                <p style="text-align: right;"> %Daily Value</p>
+                                <p>Calories: 452</p>
+                                <p>Protein: 18.1g (36%)<p>
+                                <p>Carbs: 30.2g (11%)<p>
+                                <p>Cholestorol: 236mg (79%)<p>
+                                <p>Sodium: 1199.9mg (52%)<p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            
+                
+    
+                 
+            </div>
+        </div>
+
+       
+       
+    </body>
+</html>

@@ -1,0 +1,148 @@
+body{
+    margin: 0%;
+}
+
+#catalog-banner{
+    background-color: rgb(51, 122, 99);
+    
+}
+
+#catalog-banner h2{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    color: white;
+    font-size:45px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#catalog-banner h3{
+    text-align: left;
+    margin: 10px;
+    color: rgb(182, 202, 146);;
+}
+
+#catalog-banner p{
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    color: rgb(182, 202, 146);
+}
+
+#catalog-banner input{
+    margin-left: 15px;
+}
+
+#catalog-banner label{
+    color: aliceblue;
+}
+
+/*Responsible for the div that contains all recipe boxes*/
+#recipe-catalog{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+}
+
+/* Recipe Card and Animations */
+.card{
+    width: 250px;
+    height: 150px;
+    margin: 15px;
+    
+    position: relative;
+    transform-style: preserve-3d;
+    transition:  1s ease;
+    backface-visibility: hidden;
+    
+}
+
+.card-cont{
+    display: inline-block;
+}
+
+.card-cont:hover .card{
+    
+    transform: perspective(400px) rotateY(180deg) scale(1.1); 
+    backface-visibility: hidden;
+}
+
+.card_front, 
+.card_back{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    border-radius:6px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    
+   
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/*Card Front*/
+.card_front{
+    display: flex;
+    background-color:darkseagreen;
+    color:white;
+    z-index: 1;
+    
+}
+
+.card_front h4{
+    margin: 5px;
+    font-size: large;
+}
+
+#recipe-catalog .card_front p{
+    font-size: small;
+    margin: 5px;
+    color: black;
+}
+
+.card_front img{
+   
+   height: auto;
+   width: auto;
+   object-fit:scale-down;
+  
+}
+
+/*Card Back*/
+.card_back{
+    /*Opacity can be added here if necessary*/
+    background-color: rgb(80, 132, 80);
+    transform: rotateY(180deg);
+}
+
+#recipe-catalog .card_back p{
+    text-align: justify;
+    color: white;
+    margin: 5px;
+    font-size: medium;
+}
+
+
+
+
+/*Filtering for Meal Types*/
+input[data-filter="appetizer"]:checked ~ #recipe-catalog div:not([class*="appetizer"]),
+input[data-filter="breakfast"]:checked ~ #recipe-catalog div:not([class*="breakfast"]),
+input[data-filter="lunch"]:checked ~ #recipe-catalog div:not([class*="lunch"]),
+input[data-filter="dinner"]:checked ~ #recipe-catalog div:not([class*="dinner"])
+{
+    display:none;
+}
+
+/*Filtering for Cooking Time*/
+input[data-filter="10m-30m"]:checked ~ #recipe-catalog div:not([class*="10m-30m"]),
+input[data-filter="30m-1h"]:checked ~ #recipe-catalog div:not([class*="30m-1h"]),
+input[data-filter="1h-1h30m"]:checked ~ #recipe-catalog div:not([class*="1h-1h30m"]),
+input[data-filter="1h30m+"]:checked ~ #recipe-catalog div:not([class*="1h30m+"])
+{
+    display: none;
+}

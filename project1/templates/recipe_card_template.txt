@@ -1,0 +1,36 @@
+List of all Available Classes for tagging system:
+    -Meal of the Days: appetizer , breakfast , lunch , dinner
+    -Cooking TIme: 10m-30m , 30m-1h , 1h-1h30m , 1h30m+
+
+IMPORTANT / INSTUCTIONS: 
+    -Do not change classes "card-cont", "card", "card_front", and "card_back"
+    -Leave them in the classes of the "a" and "div" html tags.
+    - You can change the classes: 
+        dinner -> lunch, appetizer, or breakfast
+        1h-1h30m -> 10m-30m, 30m-1h, 1h30m+
+    -Make sure to change:
+        - link -> appropriate link to specific recipe page
+        - image -> appropriate image of the food; if image doesn't fit well, 
+          use a different one or use in-line css in the img tag.
+        - h4 of card_front div -> appropriate name of food, meal type, and cooking time
+        - p of card_back div -> appropriate nutritional value of food
+
+Copy and Paste Everything below the dotted line and change according to instructions above
+-------------------------------------------------------------------------------------------
+<div class="card-cont dinner 1h-1h30m">
+    <a class="dinner 1h-1h30m" href="https://en.wikipedia.org/wiki/Chicken_soup">
+        <div class="card dinner 1h-1h30m">
+            <div class="card_front dinner 1h-1h30m">
+                <img src="food_images/soup.jpg" alt="pic of soup">
+                <h4>Chicken Soup <p>Dinner</p> <p>1 - 1 hour 30 minutes</p></h4>
+            </div>
+            <div class="card_back dinner 1h-1h30m">
+                <p>Calories: 87</p>
+                <p>Protein: 6g<p>
+                <p>Carbs: 8g<p>
+                <p>Cholestorol: 7mg<p>
+                <p>Sodium: 343mg<p>
+            </div>
+        </div>
+    </a>
+</div>

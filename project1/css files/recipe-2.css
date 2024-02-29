@@ -1,0 +1,221 @@
+body {
+
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    background-color:mediumaquamarine ;
+    padding: 20px 40px 10px 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.left-content{
+    width : 25%;
+    margin-right: 2%;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slide-wrapper {
+    width: 300%;
+    -webkit-animation: slide 10s ease infinite;
+}
+
+.slide {
+    float: left;
+    width: 33.33%;
+    height: 510px;
+}
+
+
+.slide-number {
+    color: #000;
+    text-align: center;
+    font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+    33.33% {
+        margin-left: -100%;
+    }
+    66.66% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+.slide:nth-child(1) {
+    background-image: url('../food_images/image1.jpg');
+    background-size: cover;
+
+}
+
+.slide:nth-child(2) {
+    background-image: url('../food_images/image2.jpg');
+    background-size: cover;
+
+}
+
+.slide:nth-child(3) {
+    background-image: url('../food_images/image3.jpg');
+    background-size: cover;
+}
+
+.rating {
+    background-color: rgb(51, 122, 99);
+    color: white;
+    text-align: center;
+    padding-bottom: 355px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rating a {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+
+#scroll-container {
+    width: 60%;
+    padding-left: 2%;
+    height: 400px;
+    margin: 0 auto;
+    position: absolute;
+    left: 25%;
+}
+
+.content-section {
+    
+    
+    color: grey;
+    width: inherit;
+    height: 900px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: grey;
+    line-height: 2em;
+}
+
+.content-section h2 {
+    color: #444;
+    font-family: Cursive;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.content-section p {}
+
+.content-section ul {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: grey;
+    line-height: 2em;
+}
+
+.content-section img {
+    width: 80%;
+    margin: auto;
+
+}
+
+.content-section {
+    color: black;
+    text-align: left;
+    box-sizing: border-box;
+
+}
+
+.nutrion-section {
+    color: grey;
+    text-align: left;
+    box-sizing: border-box;
+    width: 35%;
+    font: 10px Arial, sans-serif;
+}
+
+.table-notation {
+    background-color: rgb(51, 122, 99);
+    font: 16px Arial, sans-serif;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.table-section {
+    
+    color: grey;
+    text-align: left;
+
+    display: flex;
+
+}
+
+.nutrition-table {
+    display: flex;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.nutrition-table th,
+.nutrition-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.nutrition-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.ingredients {
+    margin-top: 20px;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.ingredients input {
+    margin: 10px;
+}
+
+.checked:checked + span {
+    text-decoration: line-through;
+}
+
+footer {
+    background-color: rgb(51, 122, 99);
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+    bottom: 0;
+    width: 100%;
+}
