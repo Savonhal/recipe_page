@@ -206,8 +206,13 @@ header {
     margin: 10px;
 }
 
+.ingredients span:hover{
+    background-color: yellow;
+}
+
 .checked:checked + span {
     text-decoration: line-through;
+    background-color: yellow;
 }
 
 footer {
