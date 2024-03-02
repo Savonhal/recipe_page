@@ -90,6 +90,7 @@ nav a:hover::before {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 20px;
 }
 
 #featured {
@@ -139,4 +140,26 @@ nav a:hover::before {
 .second {
     padding-left: 30px;
     padding-top: 35px;
+}
+
+.mission-text {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 245, 245);
+    border: #444 solid 1px;
+    margin: 15px;
+    padding-left: 15px;
+}
+
+.about-text {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 10px;
+    font-size: 20px;
 }
